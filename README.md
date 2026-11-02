@@ -11,7 +11,7 @@ It runs in two modes:
 
 Every token this bot launches streams its pool fees to a beneficiary list that Doppler enforces on chain. The split is **protocol owner 5%, course wallet 9.5%, creator 85.5%**. The course share is 10% of what would otherwise be the creator's 95%, and the rate (`COURSE_FEE_BPS`) and recipient (`COURSE_FEE_RECIPIENT`) live in one file, `src/course-fee.ts`. The course wallet is also recorded as the launch's Doppler integrator, which on a locked pool is attribution only; the beneficiary share is what pays. Live mode refuses to start while the recipient is the zero address.
 
-The fee is a default, not a license condition. This code is MIT licensed, so you can change it, but the fee is how the course pays for itself and the rate is small enough that most forks leave it. If you change the recipient or the rate, say so in your README.
+The fee is a default, not a license condition. This code is MIT licensed, so you can change it. If you change the recipient or the rate, say so in your README.
 
 ## What the token actually does
 
